@@ -42,9 +42,8 @@ public class GuessingGame {
      *         true, when the secret number not equal with number that input
      */
     public boolean guess (int number){
-        count++;
         if(this.secret == number){
-            this.setHint("Correct. The secret number is "+this.secret+".\nYou used "+this.count+" guesses.");
+            this.setHint("Correct. The secret number is "+this.secret+".\nYou used "+this.getCount()+" guesses.");
             return false;
         } else if (this.secret > number){
             this.setHint("Sorry, your guess is too small.");
@@ -69,5 +68,20 @@ public class GuessingGame {
      */
     public String getHint(){
         return this.hint;
+    }
+
+    /**
+     * Return a count of guess.
+     * @return count is time to guess.
+     */
+    public int getCount() {
+        return count;
+    }
+
+    /**
+     * count method is count time of guess.
+     */
+    public void count() {
+        this.count++;
     }
 }
