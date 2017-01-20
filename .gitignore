@@ -3,4 +3,5 @@ bin/
 build/
 *.class
 *.iml
-.idea
+*.xml
+.idea/
