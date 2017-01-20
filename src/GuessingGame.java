@@ -23,6 +23,7 @@ public class GuessingGame {
         this.secret = getRandomNumber(upperBound) ;
         this.hint = "I'm thinking of a number between 1 and "+upperBound;
     }
+
     /**
      * Create a random number between 1 and limit.
      * @param limit is the upper limit for random number
@@ -33,6 +34,7 @@ public class GuessingGame {
         Random rand = new Random(seed);
         return rand.nextInt(limit)+1 ;
     }
+
     /**
      *
      * @param number is a number that input to check with the secret number.
@@ -52,6 +54,7 @@ public class GuessingGame {
             return true;
         }
     }
+
     /**
      * Set a hint based to tell about number that too small or too large.
      * @param hint
@@ -59,6 +62,7 @@ public class GuessingGame {
     public void setHint(String hint){
         this.hint = hint ;
     }
+
     /**
      * Return a hint based on the most recent guess.
      * @return hint based on most recent guess
