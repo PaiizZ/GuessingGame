@@ -16,7 +16,7 @@ public class GuessingGame {
 
     GuessingGame(int upperBound){
         this.upperBound = upperBound;
-        this.secret = getRandomNumber(30) ;
+        this.secret = getRandomNumber(upperBound) ;
         this.hint = "I'm thinking of a number between 1 and 30";
     }
 
@@ -29,13 +29,13 @@ public class GuessingGame {
     public boolean guess (int number){
         if(this.secret == number){
             this.setHint("Correct. The secret is "+this.secret+".");
-            return true;
+            return false;
         } else if (this.secret > number){
             this.setHint("Sorry, your guess is too small.");
-            return false;
+            return true;
         } else {
             this.setHint("Sorry, your guess is too large.");
-            return false;
+            return true;
         }
     }
 
