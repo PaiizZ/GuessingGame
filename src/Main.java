@@ -1,9 +1,9 @@
 /**
- * Game of guessing a secret number.
+ * Main class for run application.
  *
  * @author Wanchanapon Thanwaranurak
  *
- * Created on 1/20/2017.
+ * Created on 20/1/2017.
  */
 
 public class Main {

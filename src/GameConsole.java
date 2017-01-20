@@ -1,11 +1,10 @@
 import java.util.Scanner;
-
 /**
  * GameConsole has a play method, it control of application.
  *
  * @author Wanchanapon Thanwaranurak
  *
- * Created on 1/20/2017.
+ * Created on 20/1/2017.
  */
 public class GameConsole {
     /**
@@ -20,11 +19,13 @@ public class GameConsole {
         Scanner input = new Scanner(System.in);
         int number ;
         System.out.println(title);
+
         do{
             System.out.println(game.getHint());
             System.out.print(prompt);
             number = input.nextInt();
         } while(game.guess(number));
+
         System.out.println(game.getHint());
         return number;
     }
