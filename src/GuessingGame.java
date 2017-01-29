@@ -42,6 +42,7 @@ public class GuessingGame {
      *         true, when the secret number not equal with number that input
      */
     public boolean guess (int number){
+        count();
         if(this.secret == number){
             this.setHint("Correct. The secret number is "+this.secret+".\nYou used "+this.getCount()+" guesses.");
             return false;

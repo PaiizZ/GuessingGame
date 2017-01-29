@@ -24,7 +24,6 @@ public class GameConsole {
             System.out.println(game.getHint());
             System.out.print(prompt);
             number = input.nextInt();
-            game.count();
         } while(game.guess(number));
 
         System.out.println(game.getHint());
