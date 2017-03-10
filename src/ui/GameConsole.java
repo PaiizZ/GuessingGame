@@ -1,3 +1,7 @@
+package ui;
+
+import game.GuessingGame;
+
 import java.util.Scanner;
 /**
  * GameConsole has a play method, it control of application.

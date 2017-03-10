@@ -1,3 +1,5 @@
+package game;
+
 import java.util.Random;
 /**
  * Game of guessing a secret number.
@@ -18,7 +20,7 @@ public class GuessingGame {
      * Initialize a new game.
      * @param upperbound is the max value for the secret number (>1).
      */
-    GuessingGame(int upperBound){
+    public GuessingGame(int upperBound){
         this.upperBound = upperBound;
         this.secret = getRandomNumber(upperBound) ;
         this.hint = "I'm thinking of a number between 1 and "+upperBound;
@@ -36,6 +38,7 @@ public class GuessingGame {
     }
 
     /**
+
      *
      * @param number is a number that input to check with the secret number.
      * @return false, when the secret number equal with the number that input
@@ -84,5 +87,13 @@ public class GuessingGame {
      */
     public void count() {
         this.count++;
+    }
+
+    /**
+     * Get the secret number.
+     * @return secret number.
+     */
+    public int getSecret() {
+        return secret;
     }
 }
